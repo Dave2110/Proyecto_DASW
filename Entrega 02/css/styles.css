@@ -11,16 +11,15 @@
   break-inside: avoid;
   margin-bottom: 7px;
   width: 100%;
+  overflow: hidden; /* CAMBIOS  */
+  border-radius: 8px; /* CAMBIOS  */
 }
 
 .gallery-item img {
-  border-radius: 8px;
   width: 100%;
   height: auto;
   display: block;
   object-fit: cover;
-  max-width: 100%;
-  max-height: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -61,7 +60,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* CAMBIOS  */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -234,5 +233,85 @@
   color: #4a6fdc;
 }
 
+.info-sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #4a6fdc;
+  overflow-x: hidden;
+  transition: width 0.5s;
+  padding-top: 60px;
+  color: white;
+  
+}
+
+
+.info-sidebar h1, .info-sidebar p {
+  margin-bottom: 10px; 
+}
+
+.info-sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.info-sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.closebtn2 {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.info-sidebar img {
+  max-width: 90%; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto 20px; 
+}
+
+.info-sidebar p.title {
+  font-weight: bold;  
+  margin-bottom: 5px; 
+  padding-left: 20px; 
+  
+}
+
+.info-sidebar p.value {
+  font-weight: normal;  
+  margin-bottom: 15px; 
+  margin-left: 30px; 
+}
+
+span.value {
+  font-weight: bold; 
+  font-family: 'Poppins', sans-serif; 
+  font-size: 14px;
+}
+
+.info-sidebar p {
+  display: flex; 
+  align-items: center; 
+}
+
+span.title {
+  margin-right: 5px; 
+  padding-left: 15px; 
+  font-family: 'Poppins', sans-serif; 
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: normal;
+}
 
 

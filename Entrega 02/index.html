@@ -53,19 +53,17 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">
-            <span>All</span></a
-          >
-          <a class="nav-link" href="index.html">
-            <span>Monkey</span></a
-          >
-          <a class="nav-link" href="index.html">
-            <span>Bear</span></a
-          >
-          <a class="nav-link" href="index.html">
-            <span>Galaxy</span></a
-          > 
+          <a class="nav-link" href="#" onclick="filterGallery('all')">All</a>
+          <a class="nav-link" href="#" onclick="filterGallery('Monkey')">Monkey</a>
+          <a class="nav-link" href="#" onclick="filterGallery('Bear')">Bear</a>
+          <a class="nav-link" href="#" onclick="filterGallery('Galaxy')">Galaxy</a>
+          <a class="nav-link" href="#" onclick="filterGallery('Hats')">Hats</a>
+          <a class="nav-link" href="#" onclick="filterGallery('Samii')">Samii</a>
+          <a class="nav-link" href="#" onclick="filterGallery('Leonardo Ruiz')">Leonardo Ruiz</a>
+          <a class="nav-link" href="#" onclick="filterGallery('NichoPV')">NichoPV</a>
+          <a class="nav-link" href="#" onclick="filterGallery('NellyRoon')">NellyRoon</a>
         </li>
+
 
         <!-- Divider -->
         <hr class="sidebar-divider" />
@@ -148,8 +146,7 @@
                 <a class="nav-link" href="shopping-cart.html" title="Carrito de compras">
                   <i class="fa-solid fa-cart-shopping"></i>
                 </a>
-              </li>    
-              
+              </li>              
               
               <!-- Nav Item - User Information -->
               <li class="nav-item dropdown no-arrow">
@@ -194,495 +191,562 @@
           <!-- End of Topbar -->
 
           <!-- Begin Page Content -->
-
           <div id="main" class="container-fluid mt-6" style="padding: 0 1px">
-            <!-- Contenido existente aquí -->
-            <div class="gallery-container">
-              <div class="gallery-item">
-                <img src="./img/nft1.jpg" alt="Gallery image" />
-                <div class="image-overlay">
-                  <div class="overlay-content">
-                    <h4>Perro 01</h4>
-                    <h6>47.2 ETH</h6>
-                    <!-- Botón que activa el modal -->
-                    <button
-                      class="btn btn-link custom-btn"
-                      data-toggle="modal"
-                      data-target="#imageModal"
-                      data-src="./img/nft1.jpg"
-                    >
-                      View
-                    </button>
-                    <span class="divider">|</span>
-                    <button class="btn btn-link custom-btn">Buy</button>
+
+                <div class="gallery-container">
+                
+                <!-- NFT 01 -->
+                <div class="gallery-item" data-category="Galaxy" data-author="Leonardo Ruiz">
+                  <img src="./img/nft1.jpg" alt="Gallery image" />
+                  <div class="image-overlay">
+                    <div class="overlay-content">
+                      <h4>Perro</h4>
+                      <h6>47.2 ETH</h6>
+                      <!-- Botón que activa el modal -->
+                      <button
+                        class="btn btn-link custom-btn"
+                        data-toggle="modal"
+                        data-target="#imageModal"
+                        data-src="./img/nft1.jpg"
+                        data-title="Perro 01"
+                        data-author="Leonardo Ruiz"
+                        data-category="Galaxy"
+                        data-price="47.2 ETH"
+                        data-date="2024-04-13"> View </button>
+                      <span class="divider">|</span>
+                      <button class="btn btn-link custom-btn">Buy</button>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="gallery-item">
-                <img src="./img/nft2.jpg" alt="Gallery image" />
-                <div class="image-overlay">
-                  <div class="overlay-content">
-                    <h4>Galaxy</h4>
-                    <h6>50.1 ETH</h6>
-                    <!-- Botón que activa el modal -->
-                    <button
-                      class="btn btn-link custom-btn"
-                      data-toggle="modal"
-                      data-target="#imageModal"
-                      data-src="./img/nft2.jpg"
-                    >
-                      View
-                    </button>
-                    <span class="divider">|</span>
-                    <button class="btn btn-link custom-btn">Buy</button>
+                <!-- NFT 02 -->
+                <div class="gallery-item" data-category="Galaxy" data-author="Leonardo Ruiz">
+                  <img src="./img/nft2.jpg" alt="Gallery image" />
+                  <div class="image-overlay">
+                    <div class="overlay-content">
+                      <h4>Galaxy</h4>
+                      <h6>50.8 ETH</h6>
+                      <!-- Botón que activa el modal -->
+                      <button
+                        class="btn btn-link custom-btn"
+                        data-toggle="modal"
+                        data-target="#imageModal"
+                        data-src="./img/nft2.jpg"
+                        data-title="Galaxy"
+                        data-author="Leonardo Ruiz"
+                        data-category="Galaxy"
+                        data-price="50.8 ETH"
+                        data-date="2024-02-09"> View </button>
+                      <span class="divider">|</span>
+                      <button class="btn btn-link custom-btn">Buy</button>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="gallery-item">
-                <img src="./img/nft3.jpg" alt="Gallery image" />
-                <div class="image-overlay">
-                  <div class="overlay-content">
-                    <h4>Galaxy</h4>
-                    <h6>50.1 ETH</h6>
-                    <!-- Botón que activa el modal -->
-                    <button
-                      class="btn btn-link custom-btn"
-                      data-toggle="modal"
-                      data-target="#imageModal"
-                      data-src="./img/nft3.jpg"
-                    >
-                      View
-                    </button>
-                    <span class="divider">|</span>
-                    <button class="btn btn-link custom-btn">Buy</button>
+                <!-- NFT 03 -->
+                <div class="gallery-item" data-category="Galaxy" data-author="Leonardo Ruiz">
+                  <img src="./img/nft3.jpg" alt="Gallery image" />
+                  <div class="image-overlay">
+                    <div class="overlay-content">
+                      <h4>Blu</h4>
+                      <h6>82.4 ETH</h6>
+                      <!-- Botón que activa el modal -->
+                      <button
+                        class="btn btn-link custom-btn"
+                        data-toggle="modal"
+                        data-target="#imageModal"
+                        data-src="./img/nft3.jpg"
+                        data-title="Blu"
+                        data-author="Leonardo Ruiz"
+                        data-category="Galaxy"
+                        data-price="82.4 ETH"
+                        data-date="2024-09-03"> View </button>
+                      <span class="divider">|</span>
+                      <button class="btn btn-link custom-btn">Buy</button>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="gallery-item">
-                <img src="./img/nft4.jpg" alt="Gallery image" />
-                <div class="image-overlay">
-                  <div class="overlay-content">
-                    <h4>Galaxy</h4>
-                    <h6>50.1 ETH</h6>
-                    <!-- Botón que activa el modal -->
-                    <button
-                      class="btn btn-link custom-btn"
-                      data-toggle="modal"
-                      data-target="#imageModal"
-                      data-src="./img/nft4.jpg"
-                    >
-                      View
-                    </button>
-                    <span class="divider">|</span>
-                    <button class="btn btn-link custom-btn">Buy</button>
+                <!-- NFT 04 -->
+                <div class="gallery-item" data-category="Galaxy" data-author="Leonardo Ruiz">
+                  <img src="./img/nft4.jpg" alt="Gallery image" />
+                  <div class="image-overlay">
+                    <div class="overlay-content">
+                      <h4>Colors</h4>
+                      <h6>21.9 ETH</h6>
+                      <!-- Botón que activa el modal -->
+                      <button
+                        class="btn btn-link custom-btn"
+                        data-toggle="modal"
+                        data-target="#imageModal"
+                        data-src="./img/nft4.jpg"
+                        data-title="Colors"
+                        data-author="Leonardo Ruiz"
+                        data-category="Galaxy"
+                        data-price="21.9 ETH"
+                        data-date="2023-11-09"> View </button>
+                      <span class="divider">|</span>
+                      <button class="btn btn-link custom-btn">Buy</button>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="gallery-item">
-                <img src="./img/nft5.jpg" alt="Gallery image" />
-                <div class="image-overlay">
-                  <div class="overlay-content">
-                    <h4>Galaxy</h4>
-                    <h6>50.1 ETH</h6>
-                    <!-- Botón que activa el modal -->
-                    <button
-                      class="btn btn-link custom-btn"
-                      data-toggle="modal"
-                      data-target="#imageModal"
-                      data-src="./img/nft5.jpg"
-                    >
-                      View
-                    </button>
-                    <span class="divider">|</span>
-                    <button class="btn btn-link custom-btn">Buy</button>
+                <!-- NFT 05 -->
+                <div class="gallery-item" data-category="Galaxy" data-author="Leonardo Ruiz">
+                  <img src="./img/nft5.jpg" alt="Gallery image" />
+                  <div class="image-overlay">
+                    <div class="overlay-content">
+                      <h4>Who?</h4>
+                      <h6>91.3 ETH</h6>
+                      <!-- Botón que activa el modal -->
+                      <button
+                        class="btn btn-link custom-btn"
+                        data-toggle="modal"
+                        data-target="#imageModal"
+                        data-src="./img/nft5.jpg"
+                        data-title="Who?"
+                        data-author="Leonardo Ruiz"
+                        data-category="Galaxy"
+                        data-price="91.3 ETH"
+                        data-date="2024-03-12"> View </button>
+                      <span class="divider">|</span>
+                      <button class="btn btn-link custom-btn">Buy</button>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="gallery-item">
-                <img src="./img/nft6.jpg" alt="Gallery image" />
-                <div class="image-overlay">
-                  <div class="overlay-content">
-                    <h4>Galaxy</h4>
-                    <h6>50.1 ETH</h6>
-                    <!-- Botón que activa el modal -->
-                    <button
-                      class="btn btn-link custom-btn"
-                      data-toggle="modal"
-                      data-target="#imageModal"
-                      data-src="./img/nft6.jpg"
-                    >
-                      View
-                    </button>
-                    <span class="divider">|</span>
-                    <button class="btn btn-link custom-btn">Buy</button>
+                <!-- NFT 06 -->
+                <div class="gallery-item" data-category="Hats" data-author="NellyRoon">
+                  <img src="./img/nft6.jpg" alt="Gallery image" />
+                  <div class="image-overlay">
+                    <div class="overlay-content">
+                      <h4>Vaquero</h4>
+                      <h6>75.2 ETH</h6>
+                      <!-- Botón que activa el modal -->
+                      <button
+                        class="btn btn-link custom-btn"
+                        data-toggle="modal"
+                        data-target="#imageModal"
+                        data-src="./img/nft6.jpg"
+                        data-title="Vaquero"
+                        data-author="NellyRoon"
+                        data-category="Hats"
+                        data-price="75.2 ETH"
+                        data-date="2024-01-09"> View </button>
+                      <span class="divider">|</span>
+                      <button class="btn btn-link custom-btn">Buy</button>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="gallery-item">
+              <!-- NFT7 -->
+              <div class="gallery-item" data-category="Hats" data-author="NellyRoon">
                 <img src="./img/nft7.jpg" alt="Gallery image" />
                 <div class="image-overlay">
                   <div class="overlay-content">
-                    <h4>Galaxy</h4>
-                    <h6>50.1 ETH</h6>
+                    <h4>Verde</h4>
+                    <h6>85.6 ETH</h6>
                     <!-- Botón que activa el modal -->
                     <button
                       class="btn btn-link custom-btn"
                       data-toggle="modal"
                       data-target="#imageModal"
                       data-src="./img/nft7.jpg"
-                    >
-                      View
-                    </button>
+                      data-title="Verde"
+                      data-author="NellyRoon"
+                      data-category="Hats"
+                      data-price="85.6 ETH"
+                      data-date="2024-05-01"> View </button>
                     <span class="divider">|</span>
                     <button class="btn btn-link custom-btn">Buy</button>
                   </div>
                 </div>
               </div>
 
-              <div class="gallery-item">
+              <!-- NFT8 -->
+              <div class="gallery-item" data-category="Hats" data-author="NellyRoon">
                 <img src="./img/nft8.jpg" alt="Gallery image" />
                 <div class="image-overlay">
                   <div class="overlay-content">
-                    <h4>Galaxy</h4>
-                    <h6>50.1 ETH</h6>
+                    <h4>Negro</h4>
+                    <h6>77.2 ETH</h6>
                     <!-- Botón que activa el modal -->
                     <button
                       class="btn btn-link custom-btn"
                       data-toggle="modal"
                       data-target="#imageModal"
                       data-src="./img/nft8.jpg"
-                    >
-                      View
-                    </button>
+                      data-title="Negro"
+                      data-author="NellyRoon"
+                      data-category="Hats"
+                      data-price="77.2 ETH"
+                      data-date="2024-05-02"> View </button>
                     <span class="divider">|</span>
                     <button class="btn btn-link custom-btn">Buy</button>
                   </div>
                 </div>
               </div>
 
-              <div class="gallery-item">
+              <!-- NFT9 -->
+              <div class="gallery-item" data-category="Hats" data-author="NellyRoon">
                 <img src="./img/nft9.jpg" alt="Gallery image" />
                 <div class="image-overlay">
                   <div class="overlay-content">
-                    <h4>Galaxy</h4>
-                    <h6>50.1 ETH</h6>
+                    <h4>Triangle</h4>
+                    <h6>69.3 ETH</h6>
                     <!-- Botón que activa el modal -->
                     <button
                       class="btn btn-link custom-btn"
                       data-toggle="modal"
                       data-target="#imageModal"
                       data-src="./img/nft9.jpg"
-                    >
-                      View
-                    </button>
+                      data-title="Triangle"
+                      data-author="NellyRoon"
+                      data-category="Hats"
+                      data-price="69.3 ETH"
+                      data-date="2024-05-03"> View </button>
                     <span class="divider">|</span>
                     <button class="btn btn-link custom-btn">Buy</button>
                   </div>
                 </div>
               </div>
 
-              <div class="gallery-item">
+              <!-- NFT10 -->
+              <div class="gallery-item" data-category="Monkey" data-author="NichoPV">
                 <img src="./img/nft10.jpg" alt="Gallery image" />
                 <div class="image-overlay">
                   <div class="overlay-content">
-                    <h4>Perro 01</h4>
-                    <h6>47.2 ETH</h6>
+                    <h4>Capitán</h4>
+                    <h6>90.1 ETH</h6>
                     <!-- Botón que activa el modal -->
                     <button
                       class="btn btn-link custom-btn"
                       data-toggle="modal"
                       data-target="#imageModal"
                       data-src="./img/nft10.jpg"
-                    >
-                      View
-                    </button>
+                      data-title="Capitán"
+                      data-author="NichoPV"
+                      data-category="Monkey"
+                      data-price="90.1 ETH"
+                      data-date="2024-05-04"> View </button>
                     <span class="divider">|</span>
                     <button class="btn btn-link custom-btn">Buy</button>
                   </div>
                 </div>
               </div>
 
-              <div class="gallery-item">
+              <!-- NFT11 -->
+              <div class="gallery-item" data-category="Monkey" data-author="NichoPV">
                 <img src="./img/nft11.jpg" alt="Gallery image" />
                 <div class="image-overlay">
                   <div class="overlay-content">
-                    <h4>Perro 01</h4>
-                    <h6>47.2 ETH</h6>
+                    <h4>Sonrisa de Oro</h4>
+                    <h6>92.5 ETH</h6>
                     <!-- Botón que activa el modal -->
                     <button
                       class="btn btn-link custom-btn"
                       data-toggle="modal"
                       data-target="#imageModal"
                       data-src="./img/nft11.jpg"
-                    >
-                      View
-                    </button>
+                      data-title="Sonrisa de Oro"
+                      data-author="NichoPV"
+                      data-category="Monkey"
+                      data-price="92.5 ETH"
+                      data-date="2024-05-05"> View </button>
                     <span class="divider">|</span>
                     <button class="btn btn-link custom-btn">Buy</button>
                   </div>
                 </div>
               </div>
 
-              <div class="gallery-item">
+              <!-- NFT12 -->
+              <div class="gallery-item" data-category="Monkey" data-author="NichoPV">
                 <img src="./img/nft12.jpg" alt="Gallery image" />
                 <div class="image-overlay">
                   <div class="overlay-content">
-                    <h4>Galaxy</h4>
-                    <h6>50.1 ETH</h6>
+                    <h4>Detective</h4>
+                    <h6>88.4 ETH</h6>
                     <!-- Botón que activa el modal -->
                     <button
                       class="btn btn-link custom-btn"
                       data-toggle="modal"
                       data-target="#imageModal"
                       data-src="./img/nft12.jpg"
-                    >
-                      View
-                    </button>
+                      data-title="Detective"
+                      data-author="NichoPV"
+                      data-category="Monkey"
+                      data-price="88.4 ETH"
+                      data-date="2024-05-06"> View </button>
                     <span class="divider">|</span>
                     <button class="btn btn-link custom-btn">Buy</button>
                   </div>
                 </div>
               </div>
 
-              <div class="gallery-item">
+              <!-- NFT13 -->
+              <div class="gallery-item" data-category="Monkey" data-author="NichoPV">
                 <img src="./img/nft13.jpg" alt="Gallery image" />
                 <div class="image-overlay">
                   <div class="overlay-content">
-                    <h4>Galaxy</h4>
-                    <h6>50.1 ETH</h6>
+                    <h4>Mirada Seria</h4>
+                    <h6>83.9 ETH</h6>
                     <!-- Botón que activa el modal -->
                     <button
                       class="btn btn-link custom-btn"
                       data-toggle="modal"
                       data-target="#imageModal"
                       data-src="./img/nft13.jpg"
-                    >
-                      View
-                    </button>
+                      data-title="Mirada Seria"
+                      data-author="NichoPV"
+                      data-category="Monkey"
+                      data-price="83.9 ETH"
+                      data-date="2024-05-07"> View </button>
                     <span class="divider">|</span>
                     <button class="btn btn-link custom-btn">Buy</button>
                   </div>
                 </div>
               </div>
 
-              <div class="gallery-item">
+              <!-- NFT14 -->
+              <div class="gallery-item" data-category="Monkey" data-author="NichoPV">
                 <img src="./img/nft14.jpg" alt="Gallery image" />
                 <div class="image-overlay">
                   <div class="overlay-content">
-                    <h4>Galaxy</h4>
-                    <h6>50.1 ETH</h6>
+                    <h4>Guardián</h4>
+                    <h6>75.8 ETH</h6>
                     <!-- Botón que activa el modal -->
                     <button
                       class="btn btn-link custom-btn"
                       data-toggle="modal"
                       data-target="#imageModal"
                       data-src="./img/nft14.jpg"
-                    >
-                      View
-                    </button>
+                      data-title="Guardián"
+                      data-author="NichoPV"
+                      data-category="Monkey"
+                      data-price="75.8 ETH"
+                      data-date="2024-05-08"> View </button>
                     <span class="divider">|</span>
                     <button class="btn btn-link custom-btn">Buy</button>
                   </div>
                 </div>
               </div>
 
-              <div class="gallery-item">
+              <!-- NFT15 -->
+              <div class="gallery-item" data-category="Monkey" data-author="NichoPV">
                 <img src="./img/nft15.jpg" alt="Gallery image" />
                 <div class="image-overlay">
                   <div class="overlay-content">
-                    <h4>Galaxy</h4>
-                    <h6>50.1 ETH</h6>
+                    <h4>Rey</h4>
+                    <h6>79.6 ETH</h6>
                     <!-- Botón que activa el modal -->
                     <button
                       class="btn btn-link custom-btn"
                       data-toggle="modal"
                       data-target="#imageModal"
                       data-src="./img/nft15.jpg"
-                    >
-                      View
-                    </button>
+                      data-title="Rey"
+                      data-author="NichoPV"
+                      data-category="Monkey"
+                      data-price="79.6 ETH"
+                      data-date="2024-05-09"> View </button>
                     <span class="divider">|</span>
                     <button class="btn btn-link custom-btn">Buy</button>
                   </div>
                 </div>
               </div>
 
-              <div class="gallery-item">
+              <!-- NFT16 -->
+              <div class="gallery-item" data-category="Monkey" data-author="NichoPV">
                 <img src="./img/nft16.jpg" alt="Gallery image" />
                 <div class="image-overlay">
                   <div class="overlay-content">
-                    <h4>Galaxy</h4>
-                    <h6>50.1 ETH</h6>
+                    <h4>General</h4>
+                    <h6>81.0 ETH</h6>
                     <!-- Botón que activa el modal -->
                     <button
                       class="btn btn-link custom-btn"
                       data-toggle="modal"
                       data-target="#imageModal"
                       data-src="./img/nft16.jpg"
-                    >
-                      View
-                    </button>
+                      data-title="General"
+                      data-author="NichoPV"
+                      data-category="Monkey"
+                      data-price="81.0 ETH"
+                      data-date="2024-05-10"> View </button>
                     <span class="divider">|</span>
                     <button class="btn btn-link custom-btn">Buy</button>
                   </div>
                 </div>
               </div>
 
-              <div class="gallery-item">
+              <!-- NFT17 -->
+              <div class="gallery-item" data-category="Monkey" data-author="NichoPV">
                 <img src="./img/nft17.jpg" alt="Gallery image" />
                 <div class="image-overlay">
                   <div class="overlay-content">
-                    <h4>Galaxy</h4>
-                    <h6>50.1 ETH</h6>
+                    <h4>Rosa</h4>
+                    <h6>84.7 ETH</h6>
                     <!-- Botón que activa el modal -->
                     <button
                       class="btn btn-link custom-btn"
                       data-toggle="modal"
                       data-target="#imageModal"
                       data-src="./img/nft17.jpg"
-                    >
-                      View
-                    </button>
+                      data-title="Rosa"
+                      data-author="NichoPV"
+                      data-category="Monkey"
+                      data-price="84.7 ETH"
+                      data-date="2024-05-11"> View </button>
                     <span class="divider">|</span>
                     <button class="btn btn-link custom-btn">Buy</button>
                   </div>
                 </div>
               </div>
 
-              <div class="gallery-item">
+              <!-- NFT18 -->
+              <div class="gallery-item" data-category="Monkey" data-author="Samii">
                 <img src="./img/nft18.jpg" alt="Gallery image" />
                 <div class="image-overlay">
                   <div class="overlay-content">
-                    <h4>Galaxy</h4>
-                    <h6>50.1 ETH</h6>
+                    <h4>Minimalista</h4>
+                    <h6>73.5 ETH</h6>
                     <!-- Botón que activa el modal -->
                     <button
                       class="btn btn-link custom-btn"
                       data-toggle="modal"
                       data-target="#imageModal"
                       data-src="./img/nft18.jpg"
-                    >
-                      View
-                    </button>
+                      data-title="Minimalista"
+                      data-author="Samii"
+                      data-category="Monkey"
+                      data-price="73.5 ETH"
+                      data-date="2024-05-12"> View </button>
                     <span class="divider">|</span>
                     <button class="btn btn-link custom-btn">Buy</button>
                   </div>
                 </div>
               </div>
 
-              <div class="gallery-item">
+              <!-- NFT19 -->
+              <div class="gallery-item" data-category="Monkey" data-author="Samii">
                 <img src="./img/nft19.jpg" alt="Gallery image" />
                 <div class="image-overlay">
                   <div class="overlay-content">
-                    <h4>Galaxy</h4>
-                    <h6>50.1 ETH</h6>
+                    <h4>Alegría</h4>
+                    <h6>66.2 ETH</h6>
                     <!-- Botón que activa el modal -->
                     <button
                       class="btn btn-link custom-btn"
                       data-toggle="modal"
                       data-target="#imageModal"
                       data-src="./img/nft19.jpg"
-                    >
-                      View
-                    </button>
+                      data-title="Alegría"
+                      data-author="Samii"
+                      data-category="Monkey"
+                      data-price="66.2 ETH"
+                      data-date="2024-05-13"> View </button>
                     <span class="divider">|</span>
                     <button class="btn btn-link custom-btn">Buy</button>
                   </div>
                 </div>
               </div>
 
-              <div class="gallery-item">
+              <!-- NFT20 -->
+              <div class="gallery-item" data-category="Monkey" data-author="Samii">
                 <img src="./img/nft20.jpg" alt="Gallery image" />
                 <div class="image-overlay">
                   <div class="overlay-content">
-                    <h4>Perro 01</h4>
-                    <h6>47.2 ETH</h6>
+                    <h4>Red</h4>
+                    <h6>91.3 ETH</h6>
                     <!-- Botón que activa el modal -->
                     <button
                       class="btn btn-link custom-btn"
                       data-toggle="modal"
                       data-target="#imageModal"
                       data-src="./img/nft20.jpg"
-                    >
-                      View
-                    </button>
+                      data-title="Red"
+                      data-author="Samii"
+                      data-category="Monkey"
+                      data-price="91.3 ETH"
+                      data-date="2024-05-14"> View </button>
                     <span class="divider">|</span>
                     <button class="btn btn-link custom-btn">Buy</button>
                   </div>
                 </div>
               </div>
 
-              <div class="gallery-item">
+              <!-- NFT21 -->
+              <div class="gallery-item"  data-category="Bear" data-author="Samii">
                 <img src="./img/nft21.jpg" alt="Gallery image" />
                 <div class="image-overlay">
                   <div class="overlay-content">
-                    <h4>Perro 01</h4>
-                    <h6>47.2 ETH</h6>
+                    <h4>Collage</h4>
+                    <h6>65.9 ETH</h6>
                     <!-- Botón que activa el modal -->
                     <button
                       class="btn btn-link custom-btn"
                       data-toggle="modal"
                       data-target="#imageModal"
                       data-src="./img/nft21.jpg"
-                    >
-                      View
-                    </button>
+                      data-title="Collage"
+                      data-author="Samii"
+                      data-category="Bear"
+                      data-price="65.9 ETH"
+                      data-date="2024-05-15"> View </button>
                     <span class="divider">|</span>
                     <button class="btn btn-link custom-btn">Buy</button>
                   </div>
                 </div>
               </div>
 
-              <div class="gallery-item">
-                <img src="./img/nft22.jpg" alt="Gallery image" />
-                <div class="image-overlay">
-                  <div class="overlay-content">
-                    <h4>Perro 01</h4>
-                    <h6>47.2 ETH</h6>
-                    <!-- Botón que activa el modal -->
-                    <button
-                      class="btn btn-link custom-btn"
-                      data-toggle="modal"
-                      data-target="#imageModal"
-                      data-src="./img/nft22.jpg"
-                    >
-                      View
-                    </button>
-                    <span class="divider">|</span>
-                    <button class="btn btn-link custom-btn">Buy</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="gallery-item">
-                <img src="./img/nft23.jpg" alt="Gallery image" />
-                <div class="image-overlay">
-                  <div class="overlay-content">
-                    <h4>Perro 01</h4>
-                    <h6>47.2 ETH</h6>
-                    <!-- Botón que activa el modal -->
-                    <button
-                      class="btn btn-link custom-btn"
-                      data-toggle="modal"
-                      data-target="#imageModal"
-                      data-src="./img/nft23.jpg"
-                    >
-                      View
-                    </button>
-                    <span class="divider">|</span>
-                    <button class="btn btn-link custom-btn">Buy</button>
-                  </div>
+              <!-- NFT22 -->
+              <div class="gallery-item"  data-category="Bear" data-author="Samii">
+              <img src="./img/nft22.jpg" alt="Gallery image" />
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h4>Money</h4>
+                  <h6>87.1 ETH</h6>
+                  <!-- Botón que activa el modal -->
+                  <button
+                    class="btn btn-link custom-btn"
+                    data-toggle="modal"
+                    data-target="#imageModal"
+                    data-src="./img/nft22.jpg"
+                    data-title="Money"
+                    data-author="Samii"
+                    data-category="Bear"
+                    data-price="87.1 ETH"
+                    data-date="2024-05-16"> View </button>
+                  <span class="divider">|</span>
+                  <button class="btn btn-link custom-btn">Buy</button>
                 </div>
               </div>
             </div>
+
+            <!-- NFT23 -->
+            <div class="gallery-item"  data-category="Bear" data-author="Samii">
+              <img src="./img/nft23.jpg" alt="Gallery image" />
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h4>Pink</h4>
+                  <h6>70.4 ETH</h6>
+                  <!-- Botón que activa el modal -->
+                  <button
+                    class="btn btn-link custom-btn"
+                    data-toggle="modal"
+                    data-target="#imageModal"
+                    data-src="./img/nft23.jpg"
+                    data-title="Pink"
+                    data-author="Samii"
+                    data-category="Bear"
+                    data-price="70.4 ETH"
+                    data-date="2024-05-17"> View </button>
+                  <span class="divider">|</span>
+                  <button class="btn btn-link custom-btn">Buy</button>
+                </div>
+              </div>
+            </div>          
           </div>
-        </div>
         <!-- End of Main Content -->
 
         <!-- Footer -->
@@ -699,21 +763,83 @@
     </div>
     <!-- End of Page Wrapper -->
 
+    <!-- Sidebar Container -->
+    <div id="info-sidebar" class="info-sidebar">
+      <a href="javascript:void(0)" class="closebtn2" onclick="closeNav()">&times;</a>
+      <img id="sidebar-image" src="" alt="Miniatura NFT">
+      
+      <p><span class="title">Nombre:</span> <span class="value" id="sidebar-name"></span></p>
+      <p><span class="title">Autor:</span> <span class="value" id="sidebar-author"></span></p>
+      <p><span class="title">Precio:</span> <span class="value" id="sidebar-price"></span></p>
+      <p><span class="title">Categoría:</span> <span class="value" id="sidebar-category"></span></p>
+      <p><span class="title">Fecha de Creación:</span> <span class="value" id="sidebar-date"></span></p>
+    </div> 
+    
+    <!-- Scripts -->
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-
     <!-- Page level plugins -->
     <script src="vendor/chart.js/Chart.min.js"></script>
-
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+    
+    <!-- Sidebar Container -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.btn-link.custom-btn').forEach(button => {
+          button.addEventListener('click', function() {
+            const imageSrc = this.dataset.src;
+            const title = this.dataset.title;
+            const author = this.dataset.author;
+            const category = this.dataset.category;
+            const price = this.dataset.price;
+            const date = this.dataset.date;
+      
+            // Llama a la función que abre la barra lateral con estos datos
+            openNav(imageSrc, author, title, price, category, date);
+          });
+        });
+      });
+      
+      function filterGallery(filter) {
+        const items = document.querySelectorAll('.gallery-item');
+        items.forEach(item => {
+          if (filter === 'all') {
+            item.style.display = 'block'; // o 'flex', dependiendo de tu CSS
+          } else {
+            const category = item.getAttribute('data-category');
+            const author = item.getAttribute('data-author');
+            if (filter === category || filter === author) {
+              item.style.display = 'block'; // o 'flex'
+            } else {
+              item.style.display = 'none';
+            }
+          }
+        });
+      }
+
+      function openNav(imageSrc, author, name, price, category, date) {
+        var sidebar = document.getElementById("info-sidebar");
+        sidebar.style.width = "250px"; // Establece el ancho al abrir la barra lateral
+        document.getElementById("sidebar-image").src = imageSrc;
+        document.getElementById("sidebar-author").innerHTML = author;
+        document.getElementById("sidebar-name").innerHTML =  name;
+        document.getElementById("sidebar-price").innerHTML =  price;
+        document.getElementById("sidebar-category").innerHTML =  category;
+        document.getElementById("sidebar-date").innerHTML =  date;
+      }
+      
+      function closeNav() {
+        var sidebar = document.getElementById("info-sidebar");
+        sidebar.style.width = "0"; // Resetear el ancho al cerrar la barra
+      }
+        
+    </script>
   </body>
 </html>
