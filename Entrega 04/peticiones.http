@@ -1,0 +1,55 @@
+POST http://localhost:3000/api/carritos HTTP/1.1
+content-type: application/json
+x-user-token: ecozxIARJr-6630585f5d945c665ffbb1be
+
+{
+    "nftId":"6631ac68e13c1ba9864c65e1",
+    "userId":"66332a276d4519c505ae9cff",
+    "cantidad":1
+}
+###
+
+POST http://localhost:3000/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "email": "maria@iteso.mx",
+    "pass": "password"
+}
+// calificacion, dificultad, retomar, libros, asistencia, calificacionObtenida, tags, commentario
+###
+POST http://localhost:3000/api/postComment HTTP/1.1
+content-type: application/json
+x-user-token: zYcQuPlh0z-6383f0dbf09568a48319f22b
+
+{
+    "calificacion": 5,
+    "dificultad": 5,
+    "retomar": true,
+    "libros": true,
+    "asistencia": true,
+    "calificacionObtenida": 7,
+    "tags": ["chido","chido","chido"],
+    "comentario": "comentario con fecha",
+    "pid": "637ffc3747d447610e1ae326"
+}
+###
+POST http://localhost:3000/api/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "maria@iteso.mx",
+    "pass": "password"
+}
+###
+GET http://localhost:3000/api/professors?nombre= HTTP/1.1
+content-type: application/json
+###
+GET http://localhost:3000/api/professors?pid=637d8950a9da8bd6770bbc65 HTTP/1.1
+content-type: application/json
+###
+GET http://localhost:3000/api/users?email= HTTP/1.1
+content-type: application/json
+###
+GET http://localhost:3000/api/comment?pid=637ffc3747d447610e1ae326 HTTP/1.1
+content-type: application/json
